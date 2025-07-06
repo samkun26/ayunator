@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アユネーター</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- タイトル画面 -->
+  <div id="title-screen">
+    <img id="title-logo" src="assets/logo.png" alt="アユネーター ロゴ" />
+    <button id="start-button">プレイする</button>
+  </div>
+
+  <!-- ゲーム画面 -->
+  <div id="game-screen" class="hidden">
+    <div id="question-area">
+      <img id="osawa-image" src="assets/osawa1.jpg" alt="大澤画像" />
+      <div id="question-container">
+        <p id="question-count"></p>
+        <p id="question-text"></p>
+      </div>
+    </div>
+    <div id="answers">
+      <button class="answer">はい</button>
+      <button class="answer">わからない</button>
+      <button class="answer">たぶんそう 部分的にそう</button>
+    </div>
+  </div>
+
+  <!-- 結果画面 -->
+  <div id="result-screen" class="hidden">
+    <img id="ayumyon-img" src="" alt="あゆみょん画像" />
+    <h1>💖 あゆみょん（愛しい人）💖</h1>
+    <p id="love-message">「あなたの心にいつもいるよ♡」</p>
+    <button id="restart-button">もう一度プレイ</button>
+
+    <div id="sns-share">
+      <p>あゆみょんに会えた♡シェアしよう！</p>
+      <a id="share-x" target="_blank">Xで共有</a>
+      <a id="share-insta" target="_blank">Instagramで共有</a>
+      <a id="share-line" target="_blank">LINEで共有</a>
+    </div>
+  </div>
+
+  <!-- 音声 -->
+  <audio id="bgm" src="assets/bgm.mp3" loop></audio>
+  <audio id="click-sound" src="assets/click.mp3"></audio>
+  <audio id="clear-sound" src="assets/clear.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

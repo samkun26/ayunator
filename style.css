@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: 'Yu Gothic', sans-serif;
+  background-color: #262f8c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+#title-screen {
+  position: fixed;
+  inset: 0;
+  background-color: #262f8c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+#title-logo {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+#start-button, #restart-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  background: #ff8abf;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#start-button:hover, #restart-button:hover {
+  background: #f46fa1;
+}
+
+#game-screen, #result-screen {
+  background: #1e2680;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 480px;
+  margin-top: 20px;
+}
+
+#question-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+#osawa-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid #ff8abf;
+}
+
+#question-container {
+  flex: 1;
+}
+
+#question-count {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #ffcdf6;
+}
+
+#question-text {
+  font-size: 1.2em;
+  line-height: 1.4;
+  min-height: 70px;
+  user-select: none;
+}
+
+#answers {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer {
+  padding: 12px;
+  background: #ff8abf;
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.15s;
+}
+
+.answer:hover {
+  background: #f46fa1;
+  transform: scale(1.05);
+}
+
+#result-screen img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ff8abf;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#love-message {
+  font-size: 1.3em;
+  margin: 15px 0;
+  color: #ffcdf6;
+}
+
+#sns-share {
+  margin-top: 20px;
+}
+
+#sns-share a {
+  margin: 5px;
+  background: white;
+  color: #333;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  #osawa-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  #result-screen img {
+    width: 120px;
+    height: 120px;
+  }
+}
